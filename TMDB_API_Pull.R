@@ -1,4 +1,4 @@
-#Potato we love movies I love data
+#Potato we love movies, I love data, this project is perfect
 
 numCores <- parallel::detectCores()#Spliting workload across multiple cores this line is for Mac might be different for linux or Windows
 results <- parallel::mclapply(1:100, function(x) {

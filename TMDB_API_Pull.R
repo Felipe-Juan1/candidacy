@@ -1,8 +1,7 @@
-#To Potato, a person whom I love more than movies.
-
+#Potato you love movies and so do I
 numCores <- parallel::detectCores()
 results <- parallel::mclapply(1:100, function(x) {
-  # Your processing code here
+  
 
 
 
@@ -10,7 +9,8 @@ results <- parallel::mclapply(1:100, function(x) {
   library(jsonlite)
   library(dplyr)
   
-  # Set up your API key and base URL
+  # Set up your API key
+  #https://developer.themoviedb.org/docs/getting-started
   api_key <- #"your-API-key"
   base_url <- "https://api.themoviedb.org/3/movie/"
   
@@ -29,7 +29,7 @@ results <- parallel::mclapply(1:100, function(x) {
                      content_type("application/octet-stream"),
                      accept("application/json"))
     
-    # Parse the content
+    # Parsing data
     movie_details <- fromJSON(content(response, "text", encoding = "UTF-8"))
     
     # Check if the movie exists (API returns a status code 34 if the movie ID does not exist)

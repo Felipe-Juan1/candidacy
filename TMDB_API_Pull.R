@@ -1,5 +1,6 @@
-#Potato you love movies and so do I
-numCores <- parallel::detectCores()
+#Potato our shared love of movies 
+
+numCores <- parallel::detectCores()#Spliting workload across multiple cores this line is for Mac might be different for linux or Windows
 results <- parallel::mclapply(1:100, function(x) {
   
 
@@ -9,18 +10,17 @@ results <- parallel::mclapply(1:100, function(x) {
   library(jsonlite)
   library(dplyr)
   
-  # Set up your API key
-  #https://developer.themoviedb.org/docs/getting-started
+  # Set up your API key @ https://developer.themoviedb.org/docs/getting-started
   api_key <- #"your-API-key"
   base_url <- "https://api.themoviedb.org/3/movie/"
   
-  # Initialize an empty data frame to store movie details
+  # Create an empty data frame to store movie details
   movies_data <- data.frame()
   
-  # Loop through movie IDs
-  for (movie_id in 1:500) {
+  # Loop through movie IDs...Loops the death of R 
+  for (movie_id in 1:500) { #there are at least 2,140,000 at last check so you can change it from 500 to 2,140,000 but beware it'll take hours without a powerful computer
     
-    # Construct the URL for each movie
+    # Create the URL for each movie
     url <- paste0(base_url, movie_id, "&append_to_response=credits")
     
     # Make the GET request

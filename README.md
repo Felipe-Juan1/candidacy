@@ -9,5 +9,5 @@ This serves as a space to document a variety of different resources related both
    * Conference funding
 - Jobs
 - HU Economics [Calendar](https://outlook.office365.com/owa/HUTM-hueconomicsdepartment@howard.edu/groupsubscription.ashx?action=join&source=MSExchange/LokiServer&guid=5d724703-f013-4ab0-813c-d3e8786c5b8c
-) where we will post information about events, socials and other cool information.
+) where we will post information about events, socials and other cool information!
 

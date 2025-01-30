@@ -5,6 +5,8 @@ This serves as a space to document a variety of different resources related both
 - Grants
 - Fellowships
 - Internships
+  * Information about internships can be found [here](https://www.overleaf.com/read/mnbhhftxfchs#18acf9)
+  
 - Conferences
    * Conference funding
 - Jobs
